@@ -155,22 +155,30 @@ header .main-menu .item .item__contents .contents__menu > ul > li {
     width: 100%;
 }
 
-header .main-menu .item .item__contents .contents__menu > ul > li ul li {
+header .main-menu .item .item__contents .contents__menu > ul > li ul {
     display: flex;
     justify-content: space-around;
+    height: 100%;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul > li ul li {
+    width: 120px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul > li ul li a {
     font-size: 12px;
     /* flex-direction: column; */
     color: #fff;
 }
 
-header .main-menu .item .item__contents .contents__menu > ul > li ul li a {
-    color: #fff;
-    transition: 0.2s;
+header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
+    background-color: #fff;
 }
 
-header .main-menu .item .item__contents .contents__menu > ul > li ul li a:hover {
+header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover a {
     color: #333;
-    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
 
 /* footer */
