@@ -241,6 +241,7 @@ header .main-menu .item .item__contents .contents__menu > ul > li ul {
 header .main-menu .item .item__contents .contents__menu > ul > li ul li {
     width: 120px;
     text-align: center;
+    cursor: pointer;
     transition: 0.4s;
 }
 
