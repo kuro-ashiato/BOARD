@@ -61,6 +61,55 @@ header .logo {
     color: #333;
 }
 
+header .sub-menu {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: flex;
+}
+
+header .sub-menu ul.menu {
+    display: flex;
+}
+
+header .sub-menu ul.menu li {
+    position: relative;
+}
+
+header .sub-menu ul.menu li::before {
+    width: 1px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 7px 0;
+    content: "";
+    display: block;
+    background: rgba(51, 51, 51, 40%);
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+header .sub-menu ul.menu li:first-child::before {
+    display: none;
+}
+
+header .sub-menu ul.menu li a {
+    display: block;
+    font-size: 12px;
+    padding: 3px 16px;
+    color: #333;
+    transition: 0.4s;
+}
+
+header .sub-menu ul.menu li:hover a {
+    background-color: #333;
+}
+
+header .sub-menu ul.menu li a:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
 header .main-menu {
     position: absolute;
     bottom: 0;
@@ -73,12 +122,12 @@ header .main-menu .item .item__name {
     padding: 10px 50px 10px 50px;
     font-weight: 600;
     font-size: 15px;
+    transition: 0.4s;
 }
 
 header .main-menu .item:hover .item__name {
     background-color: #333;
-    color: white;
-    transition: 0.4s;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -111,17 +160,17 @@ header .main-menu .item .item__contents .contents__menu > ul > li ul li {
     justify-content: space-around;
     font-size: 12px;
     /* flex-direction: column; */
-    color: white;
+    color: #fff;
 }
 
 header .main-menu .item .item__contents .contents__menu > ul > li ul li a {
-    color: white;
+    color: #fff;
     transition: 0.2s;
 }
 
 header .main-menu .item .item__contents .contents__menu > ul > li ul li a:hover {
     color: #333;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
 
 /* footer */
@@ -215,10 +264,15 @@ footer .copyright {
     margin-top: 12px;
 }
 
-footer .logo {
-    width: 160px;
-    height: 75px;
-    /* margin: 30px auto 0; */
+footer .footer-logo {
+    width: 1000px;
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-logo .logo {
     font-weight: bold;
     font-size: 45px;
     color: #fff;
