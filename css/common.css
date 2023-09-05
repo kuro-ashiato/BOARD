@@ -232,6 +232,12 @@ header .main-menu .item:hover .item__name {
     cursor: pointer;
 }
 
+header .main-menu .item .item__name.active {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
 header .main-menu .item .item__contents {
     width: 100%;
     position: fixed;
@@ -239,8 +245,46 @@ header .main-menu .item .item__contents {
     display: none;
 }
 
-header .main-menu .item:hover .item__contents {
+header .main-menu .item .item__contents.show {
     display: block;
+    animation-name: dropdown;
+    animation-duration: 0.3s;
+}
+
+@keyframes dropdown {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.1;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 header .main-menu .item .item__contents .contents__menu {
