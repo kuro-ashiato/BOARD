@@ -76,7 +76,7 @@ header .sub-menu ul.menu li {
     position: relative;
 }
 
-header .sub-menu ul.menu li::before {
+/* header .sub-menu ul.menu li::before {
     width: 1px;
     height: 10px;
     position: absolute;
@@ -91,7 +91,7 @@ header .sub-menu ul.menu li::before {
 
 header .sub-menu ul.menu li:first-child::before {
     display: none;
-}
+} */
 
 header .sub-menu ul.menu li a {
     display: block;
