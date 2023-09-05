@@ -1,11 +1,14 @@
-// const itemNameEl = document.querySelector(".item__name");
-// const subMenuEl = document.querySelector(".item__contents");
+const pageBtnEls = document.querySelectorAll(".center-num .pagebtn");
 
-// itemNameEl.addEventListener("mouseover", function (event) {
-//     subMenuEl.classList.add("show");
-
-// });
-
-// itemNameEl.addEventListener("mouseleave", function (event) {
-//     subMenuEl.classList.remove("show");
-// });
+pageBtnEls.forEach(function (pageBtnEl) {
+    pageBtnEl.addEventListener("click", function (event) {
+        if (pageBtnEl.classList.contains("clicked")) {
+            pageBtnEl.classList.remove("clicked");
+        } else {
+            pageBtnEls.forEach(function (btn) {
+                btn.classList.remove("clicked");
+            });
+            pageBtnEl.classList.add("clicked");
+        }
+    });
+});

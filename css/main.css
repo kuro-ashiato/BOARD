@@ -107,3 +107,37 @@
     border-top: 1px solid #e7e7e7;
     text-align: left;
 }
+
+.visual .inner .notice #page-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.visual .inner .notice #page-num .left-arrow,
+.visual .inner .notice #page-num .right-arrow {
+    border: 1px solid rgba(51, 51, 51, 50%);
+    color: rgba(51, 51, 51, 50%);
+}
+
+.visual .inner .notice #page-num .left-arrow:hover,
+.visual .inner .notice #page-num .right-arrow:hover {
+    border: 1px solid #252525;
+    color: #252525;
+}
+
+.visual .inner .notice #page-num .center-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.visual .inner .notice #page-num .center-num .pagebtn {
+    margin-right: 10px;
+}
+
+.visual .inner .notice #page-num .center-num .pagebtn:last-child {
+    margin-right: 0;
+}

@@ -95,6 +95,30 @@ a {
     color: #fff;
 }
 
+.pagebtn {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #fff;
+}
+
+.pagebtn.clicked {
+    border: 1px solid #333;
+    color: #333;
+}
+
+.pagebtn:hover {
+    border: 1px solid #333;
+    color: #333;
+}
+
 .clearfix:after {
     content: "";
     display: block;
